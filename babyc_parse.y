@@ -75,10 +75,10 @@ Label *search_existing_label(char *name)
    return label;
 }
  
-static ObjectType current_object_type = O_INT32;
-static ObjectType current_function_type = O_INT32;
-static ObjectType current_cast_type = O_INT32;
-static ObjectType saved_object_type = O_INT32; 
+static ObjectType current_object_type = O_INT16;
+static ObjectType current_function_type = O_INT16;
+static ObjectType current_cast_type = O_INT16;
+static ObjectType saved_object_type = O_INT16; 
 %}
 
 %define parse.trace

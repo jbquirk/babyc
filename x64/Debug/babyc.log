@@ -1,2 +1,23 @@
-﻿  log_error.c
+﻿  bb.tab.c
+  lex.bb.c
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(49,1): warning C4005: 'INT8_MIN': macro redefinition
+lex.bb.c(317): message : see previous definition of 'INT8_MIN'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(50,1): warning C4005: 'INT16_MIN': macro redefinition
+lex.bb.c(320): message : see previous definition of 'INT16_MIN'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(51,1): warning C4005: 'INT32_MIN': macro redefinition
+lex.bb.c(323): message : see previous definition of 'INT32_MIN'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(53,1): warning C4005: 'INT8_MAX': macro redefinition
+lex.bb.c(326): message : see previous definition of 'INT8_MAX'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(54,1): warning C4005: 'INT16_MAX': macro redefinition
+lex.bb.c(329): message : see previous definition of 'INT16_MAX'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(55,1): warning C4005: 'INT32_MAX': macro redefinition
+lex.bb.c(332): message : see previous definition of 'INT32_MAX'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(57,1): warning C4005: 'UINT8_MAX': macro redefinition
+lex.bb.c(335): message : see previous definition of 'UINT8_MAX'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(58,1): warning C4005: 'UINT16_MAX': macro redefinition
+lex.bb.c(338): message : see previous definition of 'UINT16_MAX'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(59,1): warning C4005: 'UINT32_MAX': macro redefinition
+lex.bb.c(341): message : see previous definition of 'UINT32_MAX'
+  main.c
+  Generating Code...
   babyc.vcxproj -> C:\Users\john\Documents\Pelles C Projects\babyc-ng\x64\Debug\babyc.exe

@@ -2,7 +2,7 @@ hello
 a.out
 out
 out.s
-
+*.obj
 *.o
 test_programs/one
 

@@ -19,13 +19,13 @@ ObjectType convert_type(char *s) {
     ObjectType type = 0;
 
     if (!strcmp(s, "int")) {
-        type = O_INT32;
+        type = O_INT16;
     } else if (!strcmp(s, "bool")) {
         type = O_UINT1;
     } else if (!strcmp(s, "long")) {
         type = O_INT32;
     } else if (!strcmp(s, "intptr_t")) {
-        type = O_INT32;
+        type = O_INT16;
     } else if (!strcmp(s, "int8_t")) {
         type = O_INT8;
     } else if (!strcmp(s, "int16_t")) {
@@ -54,7 +54,7 @@ ObjectType convert_type(char *s) {
 
 Syntax *object_type_size_syntax(ObjectType type) {
     if (type & O_ADDRESS)
-        return immediate_new("4");
+        return immediate_new("2");
     else if (type & O_INT8)
         return immediate_new("1");
     else if (type & O_INT16)
@@ -65,12 +65,12 @@ Syntax *object_type_size_syntax(ObjectType type) {
         return immediate_new("8");
     else if (type & O_INT128)
         return immediate_new("16");
-    return immediate_new("4");
+    return immediate_new("2");
 }
 
 int object_type_size_value(ObjectType type) {
     if (type & O_ADDRESS)
-        return 4;
+        return 2;
     else if (type & O_INT8)
         return 1;
     else if (type & O_INT16)
@@ -81,11 +81,11 @@ int object_type_size_value(ObjectType type) {
         return 8;
     else if (type & O_INT128)
         return 16;
-    return 4;
+    return 2;
 }
 
 ObjectType syntax_type_size_type(Syntax *syntax) {
-    ObjectType type = O_INT32;
+    ObjectType type = O_INT16;
 
     if (syntax->type == BINARY_OPERATOR) {
         type = syntax->binary_expression->objectType;
@@ -105,7 +105,7 @@ int syntax_type_size_value(Syntax *syntax) {
     ObjectType type = syntax_type_size_type(syntax);
 
     if (type & O_ADDRESS)
-        return 4;
+        return 2;
     else if (type & O_INT8)
         return 1;
     else if (type & O_INT16)
@@ -116,7 +116,7 @@ int syntax_type_size_value(Syntax *syntax) {
         return 8;
     else if (type & O_INT128)
         return 16;
-    return 4;
+    return 2;
 }
 
 Scope *scope_new(Scope *current) {
